@@ -1,0 +1,12 @@
+{  "cmd": ["Caller.bat","$file","$file_base_name"],
+"variants": [
+{"cmd": ["Calall.bat","$file_base_name"],"name": "Compile All"},
+{"cmd": ["withclass.bat","$file"],"name": "Compile Class"},
+{"cmd": ["CallAll.bat","$file_base_name"],"name": "Compile to Jar"}],
+"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+"working_dir": "$file_path",
+"selector": "source.java",
+"windows": {
+	        "encoding": "utf-8"
+	    }
+}
